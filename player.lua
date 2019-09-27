@@ -1,6 +1,9 @@
 local player = {}
 scale = 4
 
+-- Movement
+player.speed = 42 * scale
+
 -- The player's "model", so to say.
 player.image = 0
 player.width = 20 * scale
@@ -12,7 +15,6 @@ player.coords.x = 400 - (player.width / 2)
 player.coords.y = 600 - (5 * scale)
 
 -- Shooting
-
 -- Cooldown
 player.cooldown = 20
 player.dots = {}
@@ -39,6 +41,15 @@ function player.draw()
 end
 
 function player.update(dt)
+    -- Movement
+    if love.keyboard.isDown("left") or love.keyboard.isDown("a") then
+        player.coords.x = player.coords.x - player.speed * dt
+    end
+
+    if love.keyboard.isDown("right") or love.keyboard.isDown("d") then
+        player.coords.x = player.coords.x + player.speed * dt
+    end
+    -- Attack/Shooting
     if love.keyboard.isDown("space") then
         player.launch()
     end
