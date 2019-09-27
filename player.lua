@@ -16,11 +16,11 @@ player.coords.y = 600 - (5 * scale)
 
 -- Shooting
 -- Cooldown
-player.cooldown = 20
+player.cooldown = 15
 player.dots = {}
 function player.launch()
     if player.cooldown <= 0 then
-        player.cooldown = 20
+        player.cooldown = 15
         dot = {}
         dot.width = 8
         dot.height = 8
@@ -41,6 +41,7 @@ function player.draw()
 end
 
 function player.update(dt)
+    player.cooldown = player.cooldown - 1
     -- Movement
     if love.keyboard.isDown("left") or love.keyboard.isDown("a") then
         player.coords.x = player.coords.x - player.speed * dt
@@ -52,6 +53,10 @@ function player.update(dt)
     -- Attack/Shooting
     if love.keyboard.isDown("space") then
         player.launch()
+    end
+
+    for _, d in pairs(player.dots) do
+        d.y = d.y - 10
     end
 end
 return player

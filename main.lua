@@ -10,13 +10,6 @@ function love.draw()
 end
 
 function love.update(dt)
-    player.cooldown = player.cooldown - 1
-    
-    -- Player shooting
-    for _, d in pairs(player.dots) do
-        d.y = d.y - 10
-    end
-
     -- Updates the player
     player.update(dt)
 
