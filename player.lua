@@ -3,13 +3,13 @@ scale = 4
 
 -- The player's "model", so to say.
 player.image = 0
-player.width = 16 * scale
-player.height = 16 * scale
+player.width = 20 * scale
+player.height = 4 * scale
 
 -- Player coords
 player.coords = {}
-player.coords.x = 400 - 32
-player.coords.y = 600 - 80
+player.coords.x = 400 - (player.width / 2)
+player.coords.y = 600 - (5 * scale)
 
 -- Shooting
 
@@ -22,8 +22,8 @@ function player.launch()
         dot = {}
         dot.width = 8
         dot.height = 8
-        dot.x = player.coords.x + 54
-        dot.y = player.coords.y + 2
+        dot.x = player.coords.x + 40
+        dot.y = player.coords.y - 16
         table.insert(player.dots, dot)
     end
 end
