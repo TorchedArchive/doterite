@@ -42,6 +42,8 @@ end
 
 function player.update(dt)
     player.cooldown = player.cooldown - 1
+    
+    if player.coords.x < 0 then player.coords.x = 1 end
     -- Movement
     if love.keyboard.isDown("left") or love.keyboard.isDown("a") then
         player.coords.x = player.coords.x - player.speed * dt
