@@ -1,4 +1,6 @@
-# doterite
+<p align="center">
+	<img src="https://cdn.discordapp.com/attachments/524558580419133480/627940999519272981/doterite_large.png">
+ </p>
 doterite is a game with 1 goal: Make it so asteroids don't completely destroy Earth. Go out into space with your ship and obliterate large asteroids.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
