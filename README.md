@@ -8,7 +8,7 @@ obliterate large asteroids.
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-jeffs-keyboard.svg)](https://forthebadge.com)
 
-It is supposed to be a rewrite to my code [here](https://github.com/DoltolexDevelopment/dotlauncher) but decided to make it into another game still similar to it.
+It is supposed to be a rewrite to my code [here](https://github.com/DoltolexDevelopment/dotlauncher) but decided to make it into a other game still similar to it.
 
 As you probably can tell, doterite is still in very early development (it literally says prototype in the window title) so don't expect much from it right now.
 
