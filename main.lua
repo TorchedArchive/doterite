@@ -30,7 +30,7 @@ function love.draw()
     if state == "menu" then
         love.graphics.draw(textlogo, 100, 50, 0, 12, 12)
         love.graphics.draw(earth, -220, 260, 0, 18, 18)
-        love.graphics.print("Press \"Enter to start\"!", 260, 300)
+        love.graphics.print("Press \"Enter\" to start!", 260, 300)
     else
         -- Draws the player's character
         player.draw()
