@@ -5,7 +5,7 @@ scale = 4
 player.speed = 42 * scale
 
 -- The player's "model", so to say.
-player.image = 0
+player.image = love.graphics.newImage("assets/images/player.png")
 player.width = 20 * scale
 player.height = 4 * scale
 
@@ -32,8 +32,7 @@ end
 -- Functions
 function player.draw()
     -- Draws the actual player
-    love.graphics.rectangle("fill", player.coords.x, player.coords.y, player.width, player.height)
-    
+    love.graphics.draw(player.image, player.coords.x, player.coords.y, math.rad(-45), 4, 4)
     -- Shooting
     for _, d in pairs(player.dots) do
         love.graphics.rectangle("fill", d.x, d.y, d.width, d.height)

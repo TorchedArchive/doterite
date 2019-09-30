@@ -20,7 +20,7 @@ function love.load()
 
 	-- These are for the main menu
     textlogo = love.graphics.newImage("assets/images/textlogo.png")
-    earth = love.graphics.newImage("assets/images/earth.png")	
+    earth = love.graphics.newImage("assets/images/earth.png")
     -- Set background color
     love.graphics.setBackgroundColor(0, 0, 0.1)
 end
@@ -28,7 +28,7 @@ end
 function love.draw()
     -- Main Menu
     if state == "menu" then
-        love.graphics.draw(textlogo, 125, 50, 0, 12, 12)
+        love.graphics.draw(textlogo, 100, 50, 0, 12, 12)
         love.graphics.draw(earth, -220, 260, 0, 18, 18)
         love.graphics.print("Press \"Enter to start\"!", 260, 300)
     else
