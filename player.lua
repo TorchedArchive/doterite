@@ -16,11 +16,11 @@ player.coords.y = 600 - (4 * scale)
 
 -- Shooting
 -- Cooldown
-player.cooldown = 15
+player.cooldown = 22
 player.dots = {}
 function player.launch()
     if player.cooldown <= 0 then
-        player.cooldown = 15
+        player.cooldown = 22
         dot = {}
         dot.width = 8
         dot.height = 8
