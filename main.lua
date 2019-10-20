@@ -28,13 +28,16 @@ end
 function love.draw()
     -- Main Menu
     if state == "menu" then
-        love.graphics.draw(textlogo, 100, 50, 0, 12, 12)
+        love.graphics.draw(textlogo, 120, 50, 0, 12, 12)
         love.graphics.draw(earth, -220, 260, 0, 18, 18)
         love.graphics.print("Press \"Enter\" to start!", 260, 300)
-    else
+    elseif state == "game" then
         -- Draws the player's character
         player.draw()
         love.graphics.print("FPS: "..tostring(love.timer.getFPS()))
+    else
+        -- Make a simple pause menu
+        love.graphics.print("Paused!", 260, 300)
     end
 end
 
@@ -44,7 +47,14 @@ function love.update(dt)
 end
 
 function love.keypressed(key)
+    -- Menu keys
+
+    -- Main Menu
     if key == "return" then state = "game" end
 
+    -- Already ingame
+    if key == "escape" then state = "pause_menu" end
+
+    -- Anytime
     if key == "e" then love.event.quit() end
 end
