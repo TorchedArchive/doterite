@@ -42,8 +42,11 @@ function love.draw()
 end
 
 function love.update(dt)
-    -- Updates the player
-    player.update(dt)
+    -- Updates the player ONLY if the game state is "game" (to play)
+
+    if state == "game" then
+        player.update(dt)
+    end
 end
 
 function love.keypressed(key)
