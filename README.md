@@ -34,8 +34,5 @@ These are some of the things I currently plan to do for the game.
 + Animation (when graphics are done)
 + Settings
 
-## Taking Code & Assets
-I beg of you, please credit me if you are using my code. Don't just copy paste and say you wrote it. I also don't want you taking and using any of my assets without permission from me. Message me on Discord, I'm on the Love2D server. SamuraiStacks#7806
-
 ## Contribution
 You can fork this repo and make any changes that you wish, and submit a pull request. If you added/fixed something, I will make it official.
