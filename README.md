@@ -1,6 +1,8 @@
+**As of August 8th 2020, the code and all other resources of this project (assets, sound) are available to use for anyone. It might or might not benefit you, but if you need it they are here.**
+
 <p align="center">
 	<img src="https://cdn.discordapp.com/attachments/524558580419133480/627940999519272981/doterite_large.png">
- </p>
+</p>
 
 doterite is a game with 1 goal: Make it so asteroids don't completely destroy Earth. Go out into space with your ship and 
 obliterate large asteroids.
@@ -8,7 +10,7 @@ obliterate large asteroids.
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-jeffs-keyboard.svg)](https://forthebadge.com)
 
-It is supposed to be a rewrite to my code [here](https://github.com/DoltolexDevelopment/dotlauncher) but decided to make it into a other game still similar to it.
+It is supposed to be a rewrite to my code [here](https://github.com/Torchedgarbage/dotlauncher) but decided to make it into a other game still similar to it.
 
 As you probably can tell, doterite is still in very early development (it literally says prototype in the window title) so don't expect much from it right now.
 
